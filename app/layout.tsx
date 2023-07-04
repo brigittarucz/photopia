@@ -1,8 +1,7 @@
 import "@styles/globals.css";
-import Nav from "@components/Nav";
 import Footer from "@components/Footer";
 import { ReactNode } from "react";
-import Image from "next/image";
+import Header from "@components/Header";
 
 export const metadata = {
   title: "Your Photos",
@@ -12,15 +11,9 @@ export const metadata = {
 function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>
-        <header>
-          <Image
-            src="/assets/images/yourphotos-logo-black.svg"
-            width={200}
-            height={50}
-            alt="Logo"
-          />
-          <Nav />
+      <body className="sm:m-10">
+        <header className="sticky top-0">
+          <Header />
         </header>
 
         <main>{children}</main>
