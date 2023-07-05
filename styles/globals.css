@@ -8,4 +8,36 @@
   html {
     font-family: "PT Serif", system-ui, sans-serif;
   }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+  }
+
+  ::-webkit-scrollbar {
+    width: 15px;
+    background-color: #f5f5f5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 1px solid #555555;
+  }
+
+  .scrollbar-horizontal::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #f5f5f5;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
+  .scrollbar-horizontal::-webkit-scrollbar {
+    height: 10px;
+    background-color: #f5f5f5;
+  }
+
+  .scrollbar-horizontal::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 1px solid #555555;
+  }
 }
