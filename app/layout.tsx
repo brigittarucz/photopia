@@ -12,7 +12,7 @@ function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className="sm:m-10">
-        <header className="sticky top-0">
+        <header className="sticky top-0 z-20">
           <Header />
         </header>
 
