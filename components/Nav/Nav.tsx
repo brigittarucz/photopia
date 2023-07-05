@@ -1,12 +1,23 @@
 "use client";
-
+import { useNavigationEvent } from "@hooks/useNavigationEvent";
 import ListItem from "./components/ListItem";
 import { useState } from "react";
 
-const Nav = ({ isOpen }: { isOpen: boolean }) => {
+const Nav = ({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: (state: boolean) => {};
+}) => {
+  useNavigationEvent(() => {
+    setIsOpen(false);
+  });
+
   const navItems = [
     { name: "Darkroom", href: "/", available: false },
-    { name: "Innovation Lab", href: "/innovation", available: true },
+    { name: "Innovation Lab", href: "/innovation", available: false },
+    { name: "Sessions", href: "/sessions", available: true },
     { name: "Users Gallery", href: "/", available: false },
   ];
 
@@ -19,7 +30,7 @@ const Nav = ({ isOpen }: { isOpen: boolean }) => {
   return (
     <ul
       className={
-        "text-lg text-slate-100 pt-2 shadow-lg absolute bg-slate-950 w-full " +
+        "text-lg z-10 text-slate-100 pt-2 shadow-lg absolute bg-slate-950 w-full " +
         `${!isOpen ? "hidden" : "block"}`
       }
     >
