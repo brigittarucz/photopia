@@ -8,7 +8,7 @@ const Nav = ({
   setIsOpen,
 }: {
   isOpen: boolean;
-  setIsOpen: (state: boolean) => {};
+  setIsOpen: (state: boolean) => void;
 }) => {
   useNavigationEvent(() => {
     setIsOpen(false);
