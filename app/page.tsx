@@ -5,7 +5,7 @@ import SocialMedia from "@components/SocialMedia";
 import Image from "next/image";
 import React from "react";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
       <div className="absolute">
@@ -61,4 +61,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

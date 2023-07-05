@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="bg-slate-950 p-2 flex justify-between items-center shadow">
+      <div className="bg-stone-900 p-2 flex justify-between items-center shadow">
         <Link href="/">
           <Image
             src="/assets/images/yourphotos-logo-white.svg"

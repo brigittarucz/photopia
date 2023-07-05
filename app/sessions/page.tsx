@@ -1,7 +1,8 @@
+import Sessions from "@components/Sessions/Sessions";
 import React from "react";
 
-const Sessions = () => {
-  return <div>Sessions</div>;
+const SessionsPage = () => {
+  return <Sessions />;
 };
 
-export default Sessions;
+export default SessionsPage;

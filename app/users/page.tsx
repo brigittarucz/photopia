@@ -7,7 +7,7 @@ interface User {
   name: string;
 }
 
-const Users = () => {
+const UsersPage = () => {
   const [users, setUsers] = useState<User[] | null>(null);
 
   useEffect(() => {
@@ -34,4 +34,4 @@ const Users = () => {
   );
 };
 
-export default Users;
+export default UsersPage;

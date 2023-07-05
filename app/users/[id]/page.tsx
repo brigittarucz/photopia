@@ -14,7 +14,7 @@ interface Album {
   url: string;
 }
 
-const User = () => {
+const UserPage = () => {
   const params = useParams();
 
   const [user, setUser] = useState<User | null>(null);
@@ -67,4 +67,4 @@ const User = () => {
   );
 };
 
-export default User;
+export default UserPage;
