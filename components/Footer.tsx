@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <section className="bg-lime-950">
+    <section className="bg-lime-950 md:-ml-10 md:-mr-10 md:-mb-10">
       <div>
         <Image
           className="m-auto pt-5 pb-2"
