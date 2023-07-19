@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import Button from "@components/Button";
+import Button from "@components/utils/Button/Button";
 import React from "react";
 import ReactCarousel from "react-carousel-lwui";
 

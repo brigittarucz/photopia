@@ -3,8 +3,8 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <div className="md:grid md:grid-cols-2">
-      <div>
+    <div className="md:grid md:grid-cols-5 md:gap-2">
+      <div className="md:col-span-3">
         <section className="overflow-x-scroll flex scrollbar-horizontal">
           <Image
             className="h-96 md:h-72 w-90 object-cover max-w-none mb-10 mr-5"
@@ -46,7 +46,7 @@ const Gallery = () => {
         </article>
       </div>
 
-      <section className="m-5 md:m-0">
+      <section className="m-5 md:m-0 md:col-span-2">
         <article className="grid grid-rows-2 grid-cols-2 gap-5 w-96 m-auto">
           <Image
             className="object-cover"

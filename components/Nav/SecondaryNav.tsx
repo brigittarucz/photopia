@@ -1,5 +1,5 @@
 import React from "react";
-import IconOver from "./Nav/components/IconOver";
+import IconOver from "./components/IconOver";
 
 const SecondaryNav = () => {
   return (
