@@ -2,6 +2,7 @@
 import { useNavigationEvent } from "@hooks/useNavigationEvent";
 import ListItem from "./components/ListItem";
 import { useState } from "react";
+import navItems from "./components/navItems";
 
 const Nav = ({
   isOpen,
@@ -14,13 +15,6 @@ const Nav = ({
     setIsOpen(false);
   });
 
-  const navItems = [
-    { name: "Darkroom", href: "/", available: false },
-    { name: "Innovation Lab", href: "/innovation", available: false },
-    { name: "Sessions", href: "/sessions", available: true },
-    { name: "Users Gallery", href: "/", available: false },
-  ];
-
   const [follow, setFollow] = useState(false);
 
   const handleFollow = () => {
@@ -30,7 +24,7 @@ const Nav = ({
   return (
     <ul
       className={
-        "text-lg z-10 text-slate-100 pt-2 shadow-lg absolute bg-slate-950 w-full " +
+        "text-lg z-50 text-slate-100 pt-2 shadow-lg absolute bg-stone-900 w-full " +
         `${!isOpen ? "hidden" : "block"}`
       }
     >

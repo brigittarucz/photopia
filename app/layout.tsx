@@ -11,8 +11,8 @@ export const metadata = {
 function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className="sm:m-10">
-        <header className="sticky top-0 z-20">
+      <body className="md:m-10">
+        <header className="sticky top-0 z-20 md:relative">
           <Header />
         </header>
 
