@@ -1,14 +1,18 @@
+"use client";
 import Button from "@components/utils/Button/Button";
 import Gallery from "@components/Gallery";
 import SecondaryNav from "@components/Nav/SecondaryNav";
 import SocialMedia from "@components/SocialMedia";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState, ReactNode } from "react";
 
 const HomePage = () => {
+  const [modal, setModal] = useState<null | ReactNode>();
+
   return (
     <div>
+      {modal}
       <div className="relative h-96">
         <div className="absolute z-10">
           <h1 className="text-xl border bg-white border-gray-600 inline-block p-2 pr-5 mt-4 pl-5 md:border-0 md:text-8xl md:ml-20 md:bg-transparent lg:ml-44">
@@ -42,7 +46,7 @@ const HomePage = () => {
             </i>
           </p>
           <div className="flex justify-center">
-            <Button title="Start tour" href="/sessions" />
+            <Button title="Start tour" href="/sessions" setModal={setModal} />
           </div>
         </article>
         <article className="mt-5 md:grid md:grid-cols-3 md:gap-8">
